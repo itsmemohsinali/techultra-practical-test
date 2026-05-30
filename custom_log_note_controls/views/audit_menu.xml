@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_deleted_log_notes_audit_root"
+        name="Deleted Log Notes Audit"
+        sequence="100"/>
+
+    <menuitem id="menu_deleted_log_notes_audit_records"
+        name="Audit Records"
+        parent="menu_deleted_log_notes_audit_root"
+        action="action_mail_message_delete_audit"
+        sequence="10"/>
+</odoo>
