@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="project_task_view_calendar_fsm_assigned_filter" model="ir.ui.view">
+        <field name="name">project.task.calendar.fsm.assigned.filter</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="industry_fsm.project_task_view_calendar_fsm"/>
+        <field name="arch" type="xml">
+            <xpath expr="//calendar/field[@name='user_ids']" position="attributes">
+                <attribute name="filters">1</attribute>
+                <attribute name="avatar_field">avatar_128</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
